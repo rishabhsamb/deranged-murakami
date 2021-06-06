@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "deranged-murakami",
+  "private_key_id": "eb2e53ad995f86f8e0b34e7d1845308173d61340",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHj+Yi1/G4MLRK\ngmTMITH+J9fD0XPHYzuIrNszrD2nXCVYH0cXR5KihH5eEPJkvAUYdBXRTcKp6tDI\nj8j1+RMdKhfshNp3Up+RVIJw86m9v+zgvJmisWXCz5uGMslqr66mk7vAYslUrV0s\ndSsmcC+Q0RXBxFP62auNjQH0VxXdF9BGkIllSy7WSUVHWfkK0+6zymbaeDN+MsCO\nI+vGmU2SQkbovXxUcfa/6g9nkd/DZkYec2bnDedfrIVRY/ObAvTaOJ2n0O7+b50G\nsIQetniCxmv6+9m8JgWH5N2gW9tLofYU0L/YxWjmTs0uz3oieG4YwHrOXIWmDQvY\ni9RstGIXAgMBAAECggEABvqtXcKXnY12gLSWudzfVrgl/58voWWDC4CgGeqILXY3\niCFv5wyFwFFJ6hhFoehBdV159dv2VuLzclA1AwU2+eoi9A6hZVLqaba+6Rxcb1pq\n+mEeLmZt3KZOFh9ok+aZARJhmpTZ3bBCde+TFsENqM7nJ+Op3DgIm+a2jskM5rKC\nsr6EOXEygaDka0m32c3e5zH/iatVGU3rF/ge/D9O1Edxr4EqeWc7+WBMIC3BEUTN\n23quEVi9moTsncCHXonc6aOlt6SzxEq6m/CZsdqpK/nVM5QCIF49laIvyRocNx9O\n5tEz/kqY+l5xseFH8chcaK7oUEnx+REExWHYTUtO4QKBgQDkKeiIHg1uLf242wbU\nqQPGEZDXDiwYvuKxaNpOjepaII4wUl2WgxzZbFWA4PTL3Uj00QLhSvL4xHJTZBAJ\nVKA4nD9+MvcGbMJ706NWfMjacR2p50/cDg+She5vGIs/WZRCdqlzXbyb9RiJ0lJm\nyXr4Pnw+3xQSjkBI7getbR1tLQKBgQDf6LHy/Hi7bWNyCyL8rDtOCx2Ofq9s4dLr\nMXAnO43+NnnJ3DL/4+fy0KVdxkq7jBq8DJkBXMv4hJs9sOLBuRF79m1a9M3pWf91\nV1QIRr9DFHN199Y+a3pO1U+gpfvMgYU11m9cnu74K822JTQMTclj3XhlIJ9RP6zV\n2+1m+5y+0wKBgChyjXhj63mWyZ3VpjZY6ARa5NRa/NI+NK3CqsC2Q89KaiqCz3h5\nMcoRfG7mcj8ZsW9FBj+uK7iSCrphyL3+tJCUkmTq4APRkACnmhMg9/JRjzKpgOy/\nyV7uQ0CKl1TZqoDFzHBZM7BqGLmGAXmbSiNr4Fa88TAA68CCAfZqm4bZAoGAHl94\nVBe/YN1T0hKEqnXKjamgVsYEkeaIL/NC3W+MsWE+YA2ItYF640s+Q1w0owA8WCn1\nT2QBHzMNw+6Ms+6g2onxB5eRnwfgSVCRS5YdN8I8b1IxM8JskukIpigd4f3nzgfK\nj2vXyr5WZ1DgoJKksPFH9Z/ZPLJAhboRmBiliJUCgYBI/eMz7h+mfFHlQLz0ujyh\nK08tuYfWWgKKJM1htvq/I6Zxd5OkBOelu/mcngZVrX7OMGRUMfWX35rZBzu5v0b7\nDt9Clc8VG+RVOfW1tEAw5GLD2n7iVqK8c78DppnV5FNbVQFms0bDBMsGarX3p/m4\nR5UqAV2p5UNt+0e7pYyTbA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ahg3n@deranged-murakami.iam.gserviceaccount.com",
+  "client_id": "112697092651690224915",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ahg3n%40deranged-murakami.iam.gserviceaccount.com"
+}
