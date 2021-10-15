@@ -104,23 +104,19 @@ idx2char = np.array([' ', '!', '"', '#', '$', '&', "'", '(', ')', '*', ',', '-',
 
 def generate_text(model, num_generate, temperature, start_string):
 
-    input_eval = [char2idx[s] for s in start_string] # string to numbers (vectorizing)
-    input_eval = tf.expand_dims(input_eval, 0) # dimension expansion
-    text_generated = [] # Empty string to store our results
-    model.reset_states() # Clears the hidden states in the RNN
+    input_eval = [char2idx[s] for s in start_string]
+    input_eval = tf.expand_dims(input_eval, 0)
+    text_generated = []
+    model.reset_states()
 
-    for i in range(num_generate): # Run a loop for number of characters to generate
-        predictions = model(input_eval) # prediction for single character
-        predictions = tf.squeeze(predictions, 0) # remove the batch dimension
+    for i in range(num_generate):
+        predictions = model(input_eval)
+        predictions = tf.squeeze(predictions, 0)
 
         predictions = predictions / temperature
         predicted_id = tf.random.categorical(predictions, num_samples=1)[-1,0].numpy()
 
-        # The predicted character as the next input to the model
-        # along with the previous hidden state
-        # So the model makes the next prediction based on the previous character
         input_eval = tf.expand_dims([predicted_id], 0) 
-        # Also devectorize the number and add to the generated text
         text_generated.append(idx2char[predicted_id]) 
 
     return (start_string + ''.join(text_generated))
@@ -151,14 +147,7 @@ def download_blob(bucket_name, source_blob_name, destination_file_name):
 
 def handler(request):
     request_json = request.get_json()
-    # For more information about CORS and CORS preflight requests, see
-    # https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request
-    # for more information.
-
-    # Set CORS headers for the preflight request
     if request.method == 'OPTIONS':
-        # Allows GET requests from any origin with the Content-Type
-        # header and caches preflight response for an 3600s
         headers = {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET',
@@ -168,12 +157,10 @@ def handler(request):
 
         return ('', 204, headers)
 
-    # Set CORS headers for the main request
     headers = {
         'Access-Control-Allow-Origin': '*'
     }
 
-    # Model load which only happens during cold starts
     global model
     if model is None:
         download_blob('derangedmurakami-bucket', 'rnn-weights.index', '/tmp/rnn-weights.index')
