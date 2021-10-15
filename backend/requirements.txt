@@ -1,0 +1,4 @@
+# requirements.txt
+numpy
+tensorflow
+google-cloud-storage

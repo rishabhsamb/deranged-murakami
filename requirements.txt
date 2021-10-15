@@ -1,5 +1,0 @@
-# requirements.txt
-flask
-firebase_admin
-numpy
-tensorflow
