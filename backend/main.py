@@ -3,7 +3,6 @@ import tensorflow as tf
 
 from google.cloud import storage
 
-# We keep model as global variable so we don't have to reload it in case of warm invocations
 model = None
 char2idx = {' ': 0,
  '!': 1,
@@ -110,13 +109,10 @@ def generate_text(model, num_generate, temperature, start_string):
     text_generated = [] # Empty string to store our results
     model.reset_states() # Clears the hidden states in the RNN
 
-    for i in range(num_generate): #Run a loop for number of characters to generate
+    for i in range(num_generate): # Run a loop for number of characters to generate
         predictions = model(input_eval) # prediction for single character
         predictions = tf.squeeze(predictions, 0) # remove the batch dimension
 
-        # using a categorical distribution to predict the character returned by the model
-        # higher temperature increases the probability of selecting a less likely character
-        # lower --> more predictable
         predictions = predictions / temperature
         predicted_id = tf.random.categorical(predictions, num_samples=1)[-1,0].numpy()
 
