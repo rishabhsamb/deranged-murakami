@@ -2,6 +2,8 @@ server.log
 __pycache__
 .vscode
 service-key.json
+.gcloudignore
+.DS_Store
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
