@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const getProdText = async (message) => {
-    const url = "https://us-central1-deranged-murakami-314422.cloudfunctions.net/handler"
+    const url = "https://us-central1-dmura-329500.cloudfunctions.net/handler"
     const data = {
         "message": message
     }
