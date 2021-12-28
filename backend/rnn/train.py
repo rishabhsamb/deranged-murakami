@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 import os
 print("done importing")
+
 def build_model(vocab_size, embedding_dim, rnn_units, batch_size):
   model = tf.keras.Sequential([
     tf.keras.layers.Embedding(vocab_size, embedding_dim,
@@ -74,7 +75,7 @@ checkpoint_callback=tf.keras.callbacks.ModelCheckpoint(
     save_weights_only=True)
 
 print("training model")
-EPOCHS = 30
+EPOCHS = 300
 history = model.fit(dataset, 
                     epochs=EPOCHS, 
                     callbacks=[checkpoint_callback])
@@ -87,7 +88,7 @@ model.build(tf.TensorShape([1, None]))
 model.summary()
 
 MODEL_DIR = 'models'
-version = 1
+version = 2
 export_path = os.path.join(MODEL_DIR, str(version))
 print('export_path = {}\n'.format(export_path))
 

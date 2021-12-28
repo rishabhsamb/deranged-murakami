@@ -12,7 +12,7 @@ idx2char = np.array(vocab)
 def loss(labels, logits):
   return tf.keras.losses.sparse_categorical_crossentropy(labels, logits, from_logits=True)
 
-loaded = tf.keras.models.load_model('./models/1', custom_objects={'loss':loss})
+loaded = tf.keras.models.load_model('./models/2', custom_objects={'loss':loss})
 loaded.summary()
 
 def generate_text(model, num_generate, temperature, start_string):
