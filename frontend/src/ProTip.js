@@ -30,6 +30,8 @@ export default function ProTip() {
       <Grid item xs={12}>
         <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
           trying to reproduce novel-length text with character sequence learning.
+          <br></br> <br></br>
+          <a href="https://github.com/rishabhsamb/deranged-murakami">github</a>
         </Typography>
       </Grid>
       <Grid
